@@ -2,6 +2,7 @@ const express = require('express');
 const exphbs  = require('express-handlebars');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser')
+const arq_caminhos = require('./model/util/arquivo_caminhos');
 
 dotenv.config();
 
@@ -22,7 +23,7 @@ app.use(express.static('public'));
 const port = process.env.PORT || 3000;
 
 app.get('/',(req,res)=>{
-    res.render('index')
+    res.render('index',arq_caminhos.caminhos)
 });
 
 app.listen(port,()=>{
