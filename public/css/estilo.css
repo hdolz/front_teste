@@ -28,8 +28,19 @@ h3 {
     padding: 5px;
 }
 
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.white {
+    color: white;
+    font-size: 10px;
+}
+
 .header {
-    background: #1d1e20;
+    background: #200036;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -54,7 +65,7 @@ h3 {
 
 /* Corpo da página */
 
-.row {
+.container {
     margin: 5px 0;
     display: flex;
     padding: 10px;
@@ -71,16 +82,9 @@ h3 {
 
 .rodape {
     display: flex;
-    background: black;
+    background: #200036;
     padding: 10px;
     /* height: 5vh; */
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
 }
 
 

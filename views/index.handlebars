@@ -1,23 +1,39 @@
-<div class="flex-container">
-    <header class="header">
-        <a href="/">Logo</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="javascript:startRec()"> Init Rec </a></li>
-                <li><a href="javascript:stopRec()"> Stop Rec </a></li>
-                <li><a href="javascript:renderPreview()"> Render </a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="row">
-        <aside class="column">
-            <h3>Editor</h3>
-        </aside>
-        <aside class="column">
-            <h3>Viwer</h3>
-        </aside>
-    </section>
-    <footer class="rodape">
-        <a href="/">Rodape</a>
-    </footer>
-</div>
+<header class="header">
+    <a href="/">
+        <img src="/img/html.png" alt="logo">
+    </a>
+    <nav>
+        <ul class="menu">
+            <li><a href="javascript:startRec()" title="Iniciar captura de áudio">
+                    <div class="botoes">
+                        <img src="/img/microfone.png" alt="Gravar áugio">
+                        <label class="white" for="gravar">Gravar</label>
+                    </div>
+                </a>
+            </li>
+            <li><a href="javascript:stopRec()" title="Parar captura de áudio">
+                    <div class="botoes">
+                        <img src="/img/stopRec.png" alt="Parar gravação">
+                        <label class="white" for="parar">Parar</label>
+                    </div>
+                </a></li>
+            <li><a href="javascript:renderPreview()" title="Renderizar preview de código">
+                    <div class="botoes">
+                        <img src="/img/render.png" alt="Renderizar página">
+                        <label class="white" for="render">Preview</label>
+                    </div>
+                </a></li>
+        </ul>
+    </nav>
+</header>
+<section class="container">
+    <aside class="column">
+        <h3>Editor</h3>
+    </aside>
+    <aside class="column">
+        <h3>Viwer</h3>
+    </aside>
+</section>
+<footer class="rodape">
+    <a href="/">Rodape</a>
+</footer>
