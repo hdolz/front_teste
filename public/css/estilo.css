@@ -65,46 +65,27 @@ h3 {
 
 /* Corpo da página */
 
-.container {
-    margin: 5px 0;
+.main-container {
     display: flex;
     padding: 10px;
     flex-direction: row;
-    background: lightgreen;
+    background: #340357;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .column {
-    flex: 1;
-    flex-direction: column;
+    flex: 100 1 250px;
+    background: white;
     /* height: 80vh; */
-    border: 1px solid black;
+    border: 1px solid #200036;
+    margin: 10px;
+    height: 65vh;
 }
 
 .rodape {
     display: flex;
     background: #200036;
     padding: 10px;
-    /* height: 5vh; */
+    margin-bottom: 10px;
 }
-
-
-/* .row {
-    display: grid;
-    gap: 5px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "editor render";
-    height: 100vh;
-    bottom: 10px;
-    background: lightcyan;
-}
-
-.code-editor {
-    grid-area: editor;
-    background: blue
-}
-
-.code-viwer {
-    grid-area: render;
-    background: tomato
-} */

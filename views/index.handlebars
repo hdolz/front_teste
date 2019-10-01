@@ -17,7 +17,7 @@
                         <label class="white" for="parar">Parar</label>
                     </div>
                 </a></li>
-            <li><a href="javascript:renderPreview()" title="Renderizar preview de código">
+            <li><a href="javascript:renderizar()" title="Renderizar preview de código">
                     <div class="botoes">
                         <img src="/img/render.png" alt="Renderizar página">
                         <label class="white" for="render">Preview</label>
@@ -26,12 +26,12 @@
         </ul>
     </nav>
 </header>
-<section class="container">
+<section class="main-container">
     <aside class="column">
-        <h3>Editor</h3>
+        <textarea id="editor"></textarea>
     </aside>
     <aside class="column">
-        <h3>Viwer</h3>
+        <iframe frameborder="0" style="position: relative; height: 100%; width: 100%;" id="render"></iframe>
     </aside>
 </section>
 <footer class="rodape">
